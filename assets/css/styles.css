@@ -19,53 +19,112 @@ body {
 /**********  GLOBAL STYLING ****************/
 .input-form {
   width: 90%;
-  height: 1.5em; }
+  height: 1.5em;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1em; }
+
+.new-app-form {
+  position: relative; }
+  .new-app-form .fa {
+    color: grey;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: .4em 1.2em; }
+
+.search-form {
+  position: relative; }
+  .search-form .fa {
+    color: grey;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: .4em 1.2em; }
 
 /*******  APPOINTMENTS HOMEPAGE STYLING  ****/
 #homepage {
+  position: relative;
   font-family: "Lato", sans-serif;
   height: 568px;
   width: 320px;
   outline: 2px solid black; }
   #homepage h2 {
-    display: inline-block;
+    padding: .5em 0;
+    border-bottom: 2px solid #d3d3d3;
+    margin: 0 .5em .5em;
+    text-align: center;
     font-size: 2em;
-    color: #9FDD89; }
+    color: #5ddab8; }
   #homepage #plus {
+    padding: 1.5em;
+    color: grey;
+    border: none;
+    background: none;
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: inline-block; }
+  #homepage .homepage-li {
+    position: relative;
+    display: block; }
   #homepage .left-side {
+    float: left;
+    height: 3em;
     width: 20%;
     display: inline-block;
-    background-color: #9FDD89;
+    background-color: #5ddab8;
     font-weight: 700;
     color: white; }
   #homepage .right-side {
+    float: right;
+    height: 3em;
     width: 70%;
     display: inline-block;
-    background-color: #d3d3d3;
+    background-color: grey;
     font-weight: 700;
     color: black; }
 
 /*************************************/
 /*********    NEW-APP PAGE STYLNG ****/
 #new-app {
+  position: relative;
   font-family: "Lato", sans-serif;
   height: 568px;
   width: 320px;
   outline: 2px solid black; }
+  #new-app #back-button {
+    padding: 0.75em 0.5em;
+    color: grey;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block; }
   #new-app h2 {
+    padding: .5em 0;
+    border-bottom: 2px solid #d3d3d3;
+    margin: 0 .5em .5em;
+    text-align: center;
     font-size: 2em;
-    color: #d3d3d3; }
+    color: grey; }
   #new-app h4 {
-    font-size: 1em;
-    font-weight: 400;
-    color: #d3d3d3; }
+    padding: .5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: grey; }
   #new-app .save-app {
+    padding: .5em 0;
+    position: absolute;
+    bottom: 0;
     font-size: 2em;
-    background-color: #9FDD89;
+    background-color: #5ddab8;
     color: white;
-    font-weight: 700; }
-
-/************************************/
+    font-weight: 400;
+    width: 100%;
+    border: none; }
 
 /*# sourceMappingURL=styles.css.map */
