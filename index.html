@@ -2,9 +2,77 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>AppointMe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700' rel='stylesheet' type='text/css'>
+   <title>AppointMe</title>
+   <link rel="stylesheet" href="assets/css/styles.css">
   </head>
+
+
   <body>
 
+    <div id="homepage">
+
+      <h2>Appointments</h2>
+      <button id="plus">+</button>
+      <input type="text" class="input-form">
+      <ul id="homepage-ul">
+        <li class="homepage-li">
+          <div class="left-side">5pm</div>
+          <div class="right-side">
+              <h4>meet me</h4>
+              <p>@durham</p>
+          </div>
+       </li>
+
+        <li class="homepage-li">
+          <div class="left-side">5pm</div>
+          <div class="right-side">
+              <h4>meet me</h4>
+              <p>@durham</p>
+          </div>
+       </li>
+     </ul>
+    </div>
+
+
+
+
+
+    <div id="new-app">
+
+
+      <button id="plus"><</button>
+        <h2>New Appointment</h2>
+        <h4>Title</h4>
+        <input type="text" class="input-form" id="input-title">
+        <h4>Street</h4>
+        <input type="text" class="input-form" id="input-street">
+        <h4>City,State</h4>
+        <input type="text" class="input-form" id="input-city">
+        <h4>Date</h4>
+        <input type="text" class="input-form" id="input-date">
+        <h4>Time</h4>
+        <input type="text" class="input-form" id="input-time">
+      <button class="save-app">Save Appointments</button>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/appoint.js"></script>
   </body>
 </html>

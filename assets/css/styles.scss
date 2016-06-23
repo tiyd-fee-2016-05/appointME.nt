@@ -1,0 +1,86 @@
+html{
+  font: 100%;
+}
+​
+* {
+  box-sizing: border-box;
+}
+​
+body{
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+  font-weight: 400;
+}
+/********** SCSS VARIABLES  *****************/
+$green: #9FDD89;
+$grey: #d3d3d3;
+
+
+/**********  GLOBAL STYLING ****************/
+.input-form{
+  width: 90%;
+  height: 1.5em;
+}
+
+
+/*******  APPOINTMENTS HOMEPAGE STYLING  ****/
+#homepage{
+  font-family: "Lato", sans-serif;
+  height: 568px;
+  width: 320px;
+  outline: 2px solid black;
+  h2{
+    display: inline-block;
+    font-size: 2em;
+    color: $green;
+  }
+  #plus{
+    display: inline-block;
+  }
+  .left-side{
+    width: 20%;
+    display: inline-block;
+    background-color: $green;
+    font-weight: 700;
+    color: white;
+  }
+  .right-side{
+    width: 70%;
+    display: inline-block;
+    background-color: $grey;
+    font-weight: 700;
+    color: black;
+  }
+}
+/*************************************/
+
+
+
+
+/*********    NEW-APP PAGE STYLNG ****/
+#new-app{
+  font-family: "Lato", sans-serif;
+  height: 568px;
+  width: 320px;
+  outline: 2px solid black;
+
+  h2{
+    font-size: 2em;
+    color: $grey;
+  }
+
+  h4{
+    font-size: 1em;
+    font-weight: 400;
+    color: $grey;
+  }
+  .save-app{
+    font-size: 2em;
+    background-color: $green;
+    color: white;
+    font-weight: 700;
+  }
+}
