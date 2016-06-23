@@ -148,3 +148,117 @@ $grey: #d3d3d3;
     border: none;
   }
 }
+/*********APP-INFO PAGE STYLING ****/
+#app-info{
+  position: relative;
+  font-family: "Lato", sans-serif;
+  height: 568px;
+  width: 320px;
+  outline: 2px solid black;
+  #back-button{
+    padding: 0.75em 0.5em;
+    color: grey;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+  h2{
+    padding: .5em 0;
+    border-bottom: 2px solid $grey;
+    margin: 0 .5em .5em;
+    text-align: center;
+    font-size: 2em;
+    color: grey;
+  }
+  p{
+    padding: .5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: grey;
+  }
+  .map_img{
+    height: 10em;
+    width: 80%;
+    background: black;
+  }
+  .weather{
+    background: grey;
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .save-app{
+    padding: .5em 0;
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+    background-color: $green;
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+  }
+}
+
+
+
+/*********EDIT APP PAGE STYLNG ****/
+#edit-app{
+  position: relative;
+  font-family: "Lato", sans-serif;
+  height: 568px;
+  width: 320px;
+  outline: 2px solid black;
+  #back-button{
+    padding: 0.75em 0.5em;
+    color: grey;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+  h2{
+    padding: .5em 0;
+    border-bottom: 2px solid $grey;
+    margin: 0 .5em .5em;
+    text-align: center;
+    font-size: 2em;
+    color: grey;
+  }
+
+  h4{
+    padding: .5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: grey;
+  }
+  .delete-app{
+    padding: .5em 0;
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    width: 50%;
+    border: none;
+  }
+  .save-app{
+    padding: .5em 0;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    font-size: 2em;
+    background-color: $green;
+    color: white;
+    font-weight: 400;
+    width: 50%;
+    border: none;
+  }
+}

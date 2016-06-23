@@ -127,4 +127,103 @@ body {
     width: 100%;
     border: none; }
 
+/*********APP-INFO PAGE STYLING ****/
+#app-info {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  height: 568px;
+  width: 320px;
+  outline: 2px solid black; }
+  #app-info #back-button {
+    padding: 0.75em 0.5em;
+    color: grey;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block; }
+  #app-info h2 {
+    padding: .5em 0;
+    border-bottom: 2px solid #d3d3d3;
+    margin: 0 .5em .5em;
+    text-align: center;
+    font-size: 2em;
+    color: grey; }
+  #app-info p {
+    padding: .5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: grey; }
+  #app-info .map_img {
+    height: 10em;
+    width: 80%;
+    background: black; }
+  #app-info .weather {
+    background: grey;
+    font-size: 1.5em;
+    font-weight: 400; }
+  #app-info .save-app {
+    padding: .5em 0;
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+    background-color: #5ddab8;
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    border: none; }
+
+/*********EDIT APP PAGE STYLNG ****/
+#edit-app {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  height: 568px;
+  width: 320px;
+  outline: 2px solid black; }
+  #edit-app #back-button {
+    padding: 0.75em 0.5em;
+    color: grey;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block; }
+  #edit-app h2 {
+    padding: .5em 0;
+    border-bottom: 2px solid #d3d3d3;
+    margin: 0 .5em .5em;
+    text-align: center;
+    font-size: 2em;
+    color: grey; }
+  #edit-app h4 {
+    padding: .5em;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: grey; }
+  #edit-app .delete-app {
+    padding: .5em 0;
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    width: 50%;
+    border: none; }
+  #edit-app .save-app {
+    padding: .5em 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2em;
+    background-color: #5ddab8;
+    color: white;
+    font-weight: 400;
+    width: 50%;
+    border: none; }
+
 /*# sourceMappingURL=styles.css.map */

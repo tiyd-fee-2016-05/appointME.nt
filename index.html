@@ -37,7 +37,7 @@
           <div class="left-side">5pm</div>
           <div class="right-side">
               <h4>meet me</h4>
-              <p>@durham</p>
+              <p>@raleigh</p>
           </div>
        </li>
      </ul>
@@ -75,6 +75,64 @@
           <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
         </form>
       <button class="save-app">Save Appointment</button>
+    </div>
+
+
+
+
+
+    <div id="app-info">
+
+      <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+      <h2>{meeting_w/_ash}</h2>
+      <p class="meeting-time">
+        {Today_at_5pm}
+      </p>
+      <p class="meeting-location">
+        {TIY Durham}
+        <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+      </p>
+      <div class="map_img">
+        <img src="" alt="" />
+      </div>
+      <div class="weather">
+        {weather icon}
+        {temp}
+      </div>
+      <button class="save-app">Edit Appointment</button>
+    </div>
+
+
+
+    <div id="edit-app">
+
+      <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <h2>Edit Appointment</h2>
+        <h4>Title</h4>
+        <input type="text" class="input-form" id="input-title">
+
+        <h4>Street</h4>
+          <form class="new-app-form" action="index.html" method="post">
+            <input type="text" class="input-form" id="input-street">
+            <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+          </form>
+
+        <h4>City,State</h4>
+        <input type="text" class="input-form" id="input-city">
+
+        <h4>Date</h4>
+        <form class="new-app-form" action="index.html" method="post">
+          <input type="text" class="input-form" id="input-date">
+          <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+        </form>
+
+        <h4>Time</h4>
+        <form class="new-app-form" action="index.html" method="post">
+          <input type="text" class="input-form" id="input-time">
+          <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+        </form>
+      <button class="delete-app">Delete</button>
+      <button class="save-app">Save</button>
     </div>
 
 
