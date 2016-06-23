@@ -1,70 +1,62 @@
-html{
-  font: 100%;
-}
+@charset "UTF-8";
+html {
+  font: 100%; }
+
 ​
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 ​
-body{
+body {
   font-size: 1em;
   padding: 0;
   margin: 0;
   font-family: 'Lato', sans-serif;
   background-color: white;
-  font-weight: 400;
-}
+  font-weight: 400; }
+
 /********** SCSS VARIABLES  *****************/
-$green: #5ddab8;
-$grey: #d3d3d3;
-
-
 /**********  GLOBAL STYLING ****************/
-.input-form{
+.input-form {
   width: 90%;
   height: 1.5em;
   display: block;
   margin: 0 auto;
-  padding-bottom: 1em;
-}
-.new-app-form{
-  position: relative;
-  .fa{
-    color: grey;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: .4em 1.2em;
-  }
-}
-.search-form{
-  position: relative;
-  .fa{
-    color: grey;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: .4em 1.2em;
-  }
-}
+  padding-bottom: 1em; }
 
+.new-app-form {
+  position: relative; }
+  .new-app-form .fa {
+    color: grey;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: .4em 1.2em; }
+
+.search-form {
+  position: relative; }
+  .search-form .fa {
+    color: grey;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: .4em 1.2em; }
 
 /*******  APPOINTMENTS HOMEPAGE STYLING  ****/
-#homepage{
+#homepage {
   position: relative;
   font-family: "Lato", sans-serif;
   height: 568px;
   width: 320px;
-  outline: 2px solid black;
-  h2{
+  outline: 2px solid black; }
+  #homepage h2 {
     padding: .5em 0;
-    border-bottom: 2px solid $grey;
+    border-bottom: 2px solid #d3d3d3;
     margin: 0 .5em .5em;
     text-align: center;
     font-size: 2em;
-    color: $green;
-  }
-  #plus{
+    color: #5ddab8; }
+  #homepage #plus {
     padding: 1.5em;
     color: grey;
     border: none;
@@ -73,44 +65,36 @@ $grey: #d3d3d3;
     position: absolute;
     top: 0;
     right: 0;
-    display: inline-block;
-  }
-  .homepage-li{
+    display: inline-block; }
+  #homepage .homepage-li {
     position: relative;
-    display: block;
-  }
-  .left-side{
+    display: block; }
+  #homepage .left-side {
     float: left;
     height: 3em;
     width: 20%;
     display: inline-block;
-    background-color: $green;
+    background-color: #5ddab8;
     font-weight: 700;
-    color: white;
-  }
-  .right-side{
+    color: white; }
+  #homepage .right-side {
     float: right;
     height: 3em;
     width: 70%;
     display: inline-block;
     background-color: grey;
     font-weight: 700;
-    color: black;
-  }
-}
+    color: black; }
+
 /*************************************/
-
-
-
-
 /*********    NEW-APP PAGE STYLNG ****/
-#new-app{
+#new-app {
   position: relative;
   font-family: "Lato", sans-serif;
   height: 568px;
   width: 320px;
-  outline: 2px solid black;
-  #back-button{
+  outline: 2px solid black; }
+  #new-app #back-button {
     padding: 0.75em 0.5em;
     color: grey;
     border: none;
@@ -119,32 +103,28 @@ $grey: #d3d3d3;
     position: absolute;
     top: 0;
     left: 0;
-    display: inline-block;
-  }
-  h2{
+    display: inline-block; }
+  #new-app h2 {
     padding: .5em 0;
-    border-bottom: 2px solid $grey;
+    border-bottom: 2px solid #d3d3d3;
     margin: 0 .5em .5em;
     text-align: center;
     font-size: 2em;
-    color: grey;
-  }
-
-  h4{
+    color: grey; }
+  #new-app h4 {
     padding: .5em;
     font-size: 1.5em;
     font-weight: 100;
-    color: grey;
-  }
-  .save-app{
+    color: grey; }
+  #new-app .save-app {
     padding: .5em 0;
     position: absolute;
     bottom: 0;
     font-size: 2em;
-    background-color: $green;
+    background-color: #5ddab8;
     color: white;
     font-weight: 400;
     width: 100%;
-    border: none;
-  }
-}
+    border: none; }
+
+/*# sourceMappingURL=styles.css.map */
