@@ -16,15 +16,21 @@
     <div id="homepage">
 
       <h2>Appointments</h2>
-      <button id="plus">+</button>
-      <input type="text" class="input-form">
+
+
+      <button id="plus"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></button>
+      <form class="search-form" action="index.html" method="post">
+        <input type="text" class="input-form">
+        <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+      </form>
       <ul id="homepage-ul">
         <li class="homepage-li">
-          <div class="left-side">5pm</div>
-          <div class="right-side">
+          <span class="left-side">5pm</span>
+          <span class="right-side">
               <h4>meet me</h4>
               <p>@durham</p>
-          </div>
+          </span>
+
        </li>
 
         <li class="homepage-li">
@@ -43,21 +49,32 @@
 
     <div id="new-app">
 
-
-      <button id="plus"><</button>
+      <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
         <h2>New Appointment</h2>
         <h4>Title</h4>
         <input type="text" class="input-form" id="input-title">
+
         <h4>Street</h4>
-        <input type="text" class="input-form" id="input-street">
+          <form class="new-app-form" action="index.html" method="post">
+            <input type="text" class="input-form" id="input-street">
+            <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+          </form>
+
         <h4>City,State</h4>
         <input type="text" class="input-form" id="input-city">
-        <h4>Date</h4>
-        <input type="text" class="input-form" id="input-date">
-        <h4>Time</h4>
-        <input type="text" class="input-form" id="input-time">
-      <button class="save-app">Save Appointments</button>
 
+        <h4>Date</h4>
+        <form class="new-app-form" action="index.html" method="post">
+          <input type="text" class="input-form" id="input-date">
+          <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+        </form>
+
+        <h4>Time</h4>
+        <form class="new-app-form" action="index.html" method="post">
+          <input type="text" class="input-form" id="input-time">
+          <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+        </form>
+      <button class="save-app">Save Appointment</button>
 
 
 
