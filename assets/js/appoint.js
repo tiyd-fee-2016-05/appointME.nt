@@ -16,6 +16,9 @@ var editapp = Vue.extend({
   template: '#APPedit'
 });
 
+
+var App = Vue.extend({});
+
 //SETTING UP VUE ROUTER TO MAP EACH ENDPOINT DEFINED IN README.md
 var router = new VueRouter();
 
@@ -33,6 +36,8 @@ router.map({
       component: appinfo
     }
   });
+
+router.start(App,'#app1');
 
 
 });
