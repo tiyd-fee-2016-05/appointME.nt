@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
-
   <body>
 
-      <!-- <div id="homepage">
+    <router-view></router-view>
+    <template id="APPhome">
+      <div id="homepage">
 
         <h2>Appointments</h2>
 
@@ -40,10 +41,10 @@
             </div>
          </li>
        </ul>
-      </div> -->
+      </div>
+    </template>
 
-
-
+    <template id="APPnew">
       <div id="new-app">
 
         <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
@@ -75,10 +76,10 @@
           </form>
         <button class="save-app">Save Appointment</button>
       </div>
+    </template>
 
-
-
-      <!-- <div id="app-info">
+    <template id="APPinfo">
+      <div id="app-info">
 
         <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
         <h2>{meeting_w/_ash}</h2>
@@ -97,11 +98,11 @@
           {temp}
         </div>
         <button class="save-app">Edit Appointment</button>
-      </div> -->
+      </div>
+    </template>
 
-
-
-      <!-- <div id="edit-app">
+    <template id="APPedit">
+      <div id="edit-app">
 
         <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
           <h2>Edit Appointment</h2>
@@ -130,7 +131,8 @@
           </form>
         <button class="delete-app">Delete</button>
         <button class="save-app">Save</button>
-      </div> -->
+      </div>
+    </template>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

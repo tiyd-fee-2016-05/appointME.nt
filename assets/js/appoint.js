@@ -1,21 +1,38 @@
 $(function strict(){
 "use strict";
 
-  var data = {
-    title: 'title',
-    street: 'street',
-    city: 'city',
-    date: 'date',
-    time: 'time'
-  };
+//SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
 
-  $('.new-app-form-title').submit(function(e){
-    e.preventDefault();
-    var appTitle = $('#input-title').val();
-    console.log(appTitle);
+var homepage = Vue.extend({
+  template: '#APPhome'
+});
+var newapp = Vue.extend({
+  template: '#APPnew'
+});
+var appinfo = Vue.extend({
+  template: '#APPinfo'
+});
+var editapp = Vue.extend({
+  template: '#APPedit'
+});
 
-    //store the user input in localStorage
-    localStorage.setItem('title',appTitle);
-    var storedTitle = localStorage.getItem('title');
+//SETTING UP VUE ROUTER TO MAP EACH ENDPOINT DEFINED IN README.md
+var router = new VueRouter();
+
+router.map({
+    '/home' : {
+      component: homepage
+    },
+    '/new' : {
+      component: newapp
+    },
+    '/edit' : {
+      component: editapp
+    },
+    '/view' : {
+      component: appinfo
+    }
   });
+
+
 });
