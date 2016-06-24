@@ -1,5 +1,14 @@
 $(function strict(){
 "use strict";
+
+  var data = {
+    title: appTitle,
+    street: 'street',
+    city: 'city',
+    date: 'date',
+    time: 'time'
+  };
+
   $('.new-app-form-title').submit(function(e){
     e.preventDefault();
     var appTitle = $('#input-title').val();
@@ -8,6 +17,5 @@ $(function strict(){
     //store the user input in localStorage
     localStorage.setItem('title',appTitle);
     var storedTitle = localStorage.getItem('title');
-    console.log(storedTitle);
   });
 });
