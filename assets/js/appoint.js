@@ -2,7 +2,7 @@ $(function strict(){
 "use strict";
 
   var data = {
-    title: appTitle,
+    title: 'title',
     street: 'street',
     city: 'city',
     date: 'date',
