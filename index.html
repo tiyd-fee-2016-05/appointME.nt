@@ -10,21 +10,24 @@
   </head>
 
   <body>
+    <div id="app">
+      <router-view></router-view>
+    </div>
 
-    <router-view></router-view>
-    <!-- <template id="APPhome">
+
+    <template id="APPhome">
       <div id="homepage">
 
         <h2>Appointments</h2>
 
 
-        <button id="plus"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></button>
+        <button v-link="'/new'" id="plus"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></button>
         <form class="search-form" action="index.html" method="post">
           <input type="text" class="input-form">
           <i class="fa fa-search fa-lg" aria-hidden="true"></i>
         </form>
         <ul id="homepage-ul">
-          <li class="homepage-li">
+          <li v-link="'/view'" class="homepage-li">
             <div class="left-side">5pm</div>
             <div class="right-side">
                 <h4>meet me</h4>
@@ -42,13 +45,12 @@
          </li>
        </ul>
       </div>
-    </template> -->
+    </template>
 
-    <div id="app1">
     <template id="APPnew">
       <div id="new-app">
 
-        <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
           <h2>New Appointment</h2>
           <h4>Title</h4>
           <form class="new-app-form-title">
@@ -78,12 +80,11 @@
         <button class="save-app">Save Appointment</button>
       </div>
     </template>
-    </div>
 
-    <!-- <template id="APPinfo">
+    <template id="APPinfo">
       <div id="app-info">
 
-        <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
         <h2>{meeting_w/_ash}</h2>
         <p class="meeting-time">
           {Today_at_5pm}
@@ -99,14 +100,14 @@
           {weather icon}
           {temp}
         </div>
-        <button class="save-app">Edit Appointment</button>
+        <button v-link="'/edit'" class="save-app">Edit Appointment</button>
       </div>
     </template>
 
     <template id="APPedit">
       <div id="edit-app">
 
-        <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
           <h2>Edit Appointment</h2>
           <h4>Title</h4>
           <input type="text" class="input-form" id="input-title">
@@ -134,7 +135,7 @@
         <button class="delete-app">Delete</button>
         <button class="save-app">Save</button>
       </div>
-    </template> -->
+    </template>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
