@@ -33,7 +33,7 @@ var App = Vue.extend({});
 var router = new VueRouter();
 
 router.map({
-    '/home' : {
+    '/' : {
       component: homepage
     },
     '/new' : {
@@ -48,7 +48,6 @@ router.map({
   });
 
 router.start(App,'#app');
-
 
 
 // $(function(){
