@@ -23,7 +23,7 @@ var App = Vue.extend({});
 var router = new VueRouter();
 
 router.map({
-    '/home' : {
+    '/' : {
       component: homepage
     },
     '/new' : {
