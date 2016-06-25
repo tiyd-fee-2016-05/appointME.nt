@@ -2,18 +2,45 @@ $(function strict(){
 "use strict";
 
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
+var data = {[
+  {title: "First appointment"},
+  {street: "First appointment"},
+  {city,state: " "},
+  {date: " "},
+  {time: " "}
+]
+};
 
 var homepage = Vue.extend({
-  template: '#APPhome'
-});
+  template: '#APPhome',
+  data: function() {
+    return {
+      appointments: data
+    };
+  }
 var newapp = Vue.extend({
-  template: '#APPnew'
+  template: '#APPnew',
+  data: function(){
+    return {
+      appointments: data
+    }
+  }
 });
 var appinfo = Vue.extend({
   template: '#APPinfo'
+  data: function(){
+    return{
+      appointents: data
+    }
+  }
 });
 var editapp = Vue.extend({
   template: '#APPedit'
+  data: function(){
+    return{
+      appointments: data
+    }
+  }
 });
 
 
