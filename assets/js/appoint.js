@@ -1,16 +1,6 @@
 $(function strict(){
 "use strict";
-var voohoo = new Vue({
-  el: '#app',
-  data: {
-    header: 'Appointments',
-    title: '',
-    street: '',
-    city: '',
-    date: '',
-    time: ''
-  }
-});
+
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
 
 var homepage = Vue.extend({
@@ -49,9 +39,11 @@ router.map({
 
 router.start(App,'#app');
 
+$('.new-app-form-title').submit(function(e){
+  e.preventDefault();
+  var aptTitle = $('#input-title').val();
+  console.log(aptTitle);
+  $('#input-title').val("");
+});
 
-// $(function(){
-//   $('#plus').click();
-// });
-//
 });
