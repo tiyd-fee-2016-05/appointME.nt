@@ -1,6 +1,16 @@
 $(function strict(){
 "use strict";
-
+var voohoo = new Vue({
+  el: '#app',
+  data: {
+    header: 'Appointments',
+    title: '',
+    street: '',
+    city: '',
+    date: '',
+    time: ''
+  }
+});
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
 
 var homepage = Vue.extend({
@@ -37,7 +47,12 @@ router.map({
     }
   });
 
-router.start(App,'#app1');
+router.start(App,'#app');
 
 
+
+// $(function(){
+//   $('#plus').click();
+// });
+//
 });

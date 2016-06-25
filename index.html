@@ -10,9 +10,20 @@
   </head>
 
   <body>
+    <div id="app">
+      <div id="homepage">
+        <h2 id="h2home">{{header}}</h2>
+        <button id="plus"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></button>
+      </div>
+    </div>
+
+
+
+
 
     <router-view></router-view>
-    <!-- <template id="APPhome">
+
+    <template id="APPhome">
       <div id="homepage">
 
         <h2>Appointments</h2>
@@ -42,13 +53,12 @@
          </li>
        </ul>
       </div>
-    </template> -->
+    <!-- </template> -->
 
-    <div id="app1">
     <template id="APPnew">
       <div id="new-app">
 
-        <button id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button id="back-button" v-link="{ path: '/home' }"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
           <h2>New Appointment</h2>
           <h4>Title</h4>
           <form class="new-app-form-title">
@@ -78,7 +88,6 @@
         <button class="save-app">Save Appointment</button>
       </div>
     </template>
-    </div>
 
     <!-- <template id="APPinfo">
       <div id="app-info">
@@ -135,7 +144,6 @@
         <button class="save-app">Save</button>
       </div>
     </template> -->
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src = "https://npmcdn.com/vue@1.0.25/dist/vue.min.js"></script>
