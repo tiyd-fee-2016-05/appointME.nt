@@ -2,14 +2,14 @@ $(function strict(){
 "use strict";
 
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
-var data = {[
-  {title: "First appointment"},
-  {street: "First appointment"},
-  {city,state: " "},
-  {date: " "},
-  {time: " "}
-]
-};
+var data = [{
+  title: "first appointment",
+  street: "first appointment",
+  city: "first appointment",
+  date: "first appointment",
+  time: "first appointment"
+}];
+
 
 var homepage = Vue.extend({
   template: '#APPhome',
@@ -18,16 +18,17 @@ var homepage = Vue.extend({
       appointments: data
     };
   }
+});
 var newapp = Vue.extend({
   template: '#APPnew',
   data: function(){
     return {
       appointments: data
-    }
+    };
   }
 });
 var appinfo = Vue.extend({
-  template: '#APPinfo'
+  template: '#APPinfo',
   data: function(){
     return{
       appointents: data
@@ -35,7 +36,7 @@ var appinfo = Vue.extend({
   }
 });
 var editapp = Vue.extend({
-  template: '#APPedit'
+  template: '#APPedit',
   data: function(){
     return{
       appointments: data
@@ -46,7 +47,7 @@ var editapp = Vue.extend({
 
 var App = Vue.extend({});
 
-//SETTING UP VUE ROUTER TO MAP EACH ENDPOINT DEFINED IN README.md
+// SETTING UP VUE ROUTER TO MAP EACH ENDPOINT DEFINED IN README.md
 var router = new VueRouter();
 
 router.map({
