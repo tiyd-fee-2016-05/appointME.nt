@@ -4,8 +4,7 @@
 var savedAppointments = [];
 
 //SAVE BUTTON - ADDS USER INPUT TO ARRAY OF OBJECTS
-$('.save-app').click(function(e){
-  console.log('hey');
+$('.save-app').submit(function(e){
   e.preventDefault();
   //LOG THE INFORMATION
   function saveApp(title, street, city, date, time) {
@@ -23,11 +22,11 @@ $('.save-app').click(function(e){
 
 //DATA MODEL FOR EACH NEW APPOINTMENT ENTRY//
 var data = {
-  title: "First appointment",
-  street: "1 Street",
-  city: "Durham",
-  date: "today",
-  time: "now"
+  title: localStorage.getItem('title'),
+  street: localStorage.getItem('street'),
+  city: localStorage.getItem('city'),
+  date: localStorage.getItem('date'),
+  time: localStorage.getItem('time')
 };
 
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
@@ -42,7 +41,12 @@ var homepage = Vue.extend({
 
 //SET UP VUE COMPONENTS FOR NEW INFORMATION
 var newapp = Vue.extend({
-  template: '#APPnew'
+  template: '#APPnew',
+  data: function() {
+    return {
+      appointments: data
+    };
+  }
 });
 var appinfo = Vue.extend({
   template: '#APPinfo'
