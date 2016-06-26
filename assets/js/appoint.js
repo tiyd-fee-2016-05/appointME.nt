@@ -49,10 +49,20 @@ var newapp = Vue.extend({
   }
 });
 var appinfo = Vue.extend({
-  template: '#APPinfo'
+  template: '#APPinfo',
+  data: function(){
+    return{
+      appointments: data
+    };
+  }
 });
 var editapp = Vue.extend({
-  template: '#APPedit'
+  template: '#APPedit',
+  data: function(){
+    return{
+      appointments: data
+    };
+  }
 });
 
 

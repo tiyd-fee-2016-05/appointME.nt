@@ -28,19 +28,19 @@
       </form>
       <ul id="homepage-ul">
         <li v-link="'/view'" class="homepage-li">
-          <div class="left-side">{{appointments.time}}</div>
+          <div class="left-side"><p>{{appointments.time}}</p></div>
           <div class="right-side">
             <h4>{{appointments.title}}</h4>
-            <p>{{appointments.street}}, {{appointments.city}}</p>
+            <p>@{{appointments.street}}, {{appointments.city}}</p>
           </div>
 
         </li>
 
         <li class="homepage-li">
-          <div class="left-side">{{appointments.time}}</div>
+          <div class="left-side"><p>{{appointments.time}}</p></div>
           <div class="right-side">
             <h4>{{appointments.title}}</h4>
-            <p>{{appointments.street}}, {{appointments.city}}</p>
+            <p>@{{appointments.street}}, {{appointments.city}}</p>
           </div>
         </li>
       </ul>
@@ -85,12 +85,12 @@
     <div id="app-info">
 
       <a v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-      <h2>{meeting_w/_ash}</h2>
+      <h2>{{appointments.title}}</h2>
       <p class="meeting-time">
-        {Today_at_5pm}
+        {{appointments.date}} at <span>{{appointments.time}}</span>
       </p>
       <p class="meeting-location">
-        {TIY Durham}
+        {{appointments.street}}
         <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
       </p>
       <div class="map_img">
@@ -110,30 +110,30 @@
       <a v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
       <h2>Edit Appointment</h2>
       <h4>Title</h4>
-      <input type="text" class="input-form" id="input-title">
+      <input type="text" class="input-form" id="input-title" placeholder="{{appointments.title}}">
 
       <h4>Street</h4>
       <form class="new-app-form" action="index.html" method="post">
-        <input type="text" class="input-form" id="input-street">
+        <input type="text" class="input-form" id="input-street" placeholder="{{appointments.street}}">
         <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
       </form>
 
       <h4>City, State</h4>
-      <input type="text" class="input-form" id="input-city">
+      <input type="text" class="input-form" id="input-city" placeholder="{{appointments.city}}">
 
       <h4>Date</h4>
       <form class="new-app-form" action="index.html" method="post">
-        <input type="text" class="input-form" id="input-date">
+        <input type="text" class="input-form" id="input-date" placeholder="{{appointments.date}}">
         <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
       </form>
 
       <h4>Time</h4>
       <form class="new-app-form" action="index.html" method="post">
-        <input type="text" class="input-form" id="input-time">
+        <input type="text" class="input-form" id="input-time" placeholder="{{appointments.time}}">
         <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
       </form>
-      <a class="delete-app">Delete</a>
-      <a class="save-app">Save</a>
+      <a class="delete-app"><span>Delete</span></a>
+      <a class="save-app"><span>Save</span></a>
     </div>
   </template>
 
