@@ -33,7 +33,7 @@
             <div class="left-side">5pm</div>
             <div class="right-side">
                 <h4>{{appointments.title}}</h4>
-                <p>@durham</p>
+                <p>{{appointments.street}}, {{appointments.city}}</p>
             </div>
 
          </li>
@@ -41,7 +41,7 @@
           <li class="homepage-li">
             <div class="left-side">5pm</div>
             <div class="right-side">
-                <h4>{{appointments.title}}</h4>
+                <h4>meet me</h4>
                 <p>@raleigh</p>
             </div>
          </li>
@@ -54,32 +54,32 @@
 
         <a v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
           <h2>New Appointment</h2>
-          <h4>{{appointments.title}}</h4>
+          <h4>Title</h4>
           <form class="new-app-form-title">
-            <input type="text" class="input-form" id="input-title" v-model="">
+            <input type="text" class="input-form" id="input-title">
           </form>
 
-          <h4>{{appointments.street}}</h4>
+          <h4>Street</h4>
             <form class="new-app-form" action="index.html" method="post">
-              <input type="text" class="input-form" id="input-street" v-model="">
+              <input type="text" class="input-form" id="input-street">
               <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
             </form>
 
-          <h4>{{appointments.city}}</h4>
-          <input type="text" class="input-form" id="input-city" v-model="">
+          <h4>City, State</h4>
+          <input type="text" class="input-form" id="input-city">
 
-          <h4>{{appointments.date}}</h4>
+          <h4>Date</h4>
           <form class="new-app-form" action="index.html" method="post">
-            <input type="text" class="input-form" id="input-date" v-model="">
+            <input type="text" class="input-form" id="input-date">
             <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
           </form>
 
-          <h4>{{appointments.time}}</h4>
+          <h4>Time</h4>
           <form class="new-app-form" action="index.html" method="post">
-            <input type="text" class="input-form" id="input-time" v-model="">
+            <input type="text" class="input-form" id="input-time">
             <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
           </form>
-        <a class="save-app">Save Appointment</a>
+        <button class="save-app">Save Appointment</button>
       </div>
     </template>
 
@@ -111,27 +111,27 @@
 
         <a v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
           <h2>Edit Appointment</h2>
-          <h4>{{appointments.title}}</h4>
-          <input type="text" class="input-form" id="input-title" v-model="">
+          <h4>Title</h4>
+          <input type="text" class="input-form" id="input-title">
 
-          <h4>{{appointments.street}}</h4>
+          <h4>Street</h4>
             <form class="new-app-form" action="index.html" method="post">
-              <input type="text" class="input-form" id="input-street" v-model="">
+              <input type="text" class="input-form" id="input-street">
               <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
             </form>
 
-          <h4>{{appointments.city}}</h4>
-          <input type="text" class="input-form" id="input-city" v-model="">
+          <h4>City, State</h4>
+          <input type="text" class="input-form" id="input-city">
 
-          <h4>{{appointments.date}}</h4>
+          <h4>Date</h4>
           <form class="new-app-form" action="index.html" method="post">
-            <input type="text" class="input-form" id="input-date" v-model="">
+            <input type="text" class="input-form" id="input-date">
             <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
           </form>
 
-          <h4>{{appointments.time}}</h4>
+          <h4>Time</h4>
           <form class="new-app-form" action="index.html" method="post">
-            <input type="text" class="input-form" id="input-time" v-model="">
+            <input type="text" class="input-form" id="input-time">
             <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
           </form>
         <a class="delete-app">Delete</a>

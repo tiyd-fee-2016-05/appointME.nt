@@ -4,10 +4,10 @@ $(function strict(){
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
 var data = [{
   title: "first appointment",
-  street: "first appointment",
-  city: "first appointment",
-  date: "first appointment",
-  time: "first appointment"
+  street: "street appointment",
+  city: "city appointment",
+  date: " date appointment",
+  time: "time appointment"
 }];
 
 
@@ -19,6 +19,7 @@ var homepage = Vue.extend({
     };
   }
 });
+
 var newapp = Vue.extend({
   template: '#APPnew',
   data: function(){
