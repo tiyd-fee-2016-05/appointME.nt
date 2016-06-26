@@ -1,0 +1,35 @@
+$(document).ready(function(){
+
+  $('.save-app').submit(function(e){
+    e.preventDefault();
+    console.log("Submit works");
+
+    var a = $('input-city').val();
+    var b =a.split(" ");
+    var city = b[1];
+    var state = b[2];
+    var citycap = city.charAt(0).toUpperCase() + city.slice(1);
+
+    if (a === "@weather" + " " + city + " " + state || a === "@weather" + " " + city + "," + " " + state) {
+      console.log("weather!");
+      console.log(b, b);
+      // console.log(weather);
+
+      $.ajax({
+              url: "https://api.wunderground.com/api/35c9d364b4732721/forecast/q/NC/" + city + "/.json",
+              method: 'GET',
+              dataType: "JSON",
+              success: function(json) {
+                $('.weather').append({temp} + "@weather:");
+                $('.weather').append("<li class='chatcontent'>" + "The current forecast for " + citycap + " is: " + "<br>" + "<br>" + json.forecast.txt_forecast.forecastday[0].fcttext + "<br>" +  "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>"  +  "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>"  +  "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>"  + "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>" + "<img class='weatherimg' src='" + json.forecast.txt_forecast.forecastday[0].icon_url + "'>" + "</li>");
+
+                console.log(json);
+                console.log(json.forecast.txt_forecast.forecastday[0].icon_url );
+
+                $('input').val("");
+              }
+            });
+    }
+ });
+
+});

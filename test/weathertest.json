@@ -1,0 +1,396 @@
+
+{
+  "response": {
+    "version":"0.1",
+    "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+    "features": {
+      "forecast": 1
+    }
+  }
+  ,
+  "forecast":{
+    "txt_forecast": {
+      "date":"2:26 PM EDT",
+      "forecastday": [
+        {
+          "period":0,
+          "icon":"partlycloudy",
+          "icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title":"Sunday",
+          "fcttext":"Sun and clouds mixed. High 86F. Winds light and variable.",
+          "fcttext_metric":"Partly cloudy. High around 30C. Winds light and variable.",
+          "pop":"0"
+        }
+        ,
+        {
+          "period":1,
+          "icon":"nt_clear",
+          "icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+          "title":"Sunday Night",
+          "fcttext":"Clear skies. Low 64F. Winds light and variable.",
+          "fcttext_metric":"Generally clear. Low 18C. Winds light and variable.",
+          "pop":"10"
+        }
+        ,
+        {
+          "period":2,
+          "icon":"partlycloudy",
+          "icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title":"Monday",
+          "fcttext":"Partly cloudy skies. High near 90F. Winds light and variable.",
+          "fcttext_metric":"Partly cloudy. High 32C. Winds light and variable.",
+          "pop":"10"
+        }
+        ,
+        {
+          "period":3,
+          "icon":"nt_chancerain",
+          "icon_url":"http://icons.wxug.com/i/c/k/nt_chancerain.gif",
+          "title":"Monday Night",
+          "fcttext":"Cloudy in the evening, then off and on rain showers after midnight. Thunder possible. Low 69F. Winds light and variable. Chance of rain 70%.",
+          "fcttext_metric":"Considerable cloudiness. Occasional rain showers later at night. Thunder possible. Low 21C. Winds light and variable. Chance of rain 70%.",
+          "pop":"70"
+        }
+        ,
+        {
+          "period":4,
+          "icon":"chancetstorms",
+          "icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+          "title":"Tuesday",
+          "fcttext":"Mixed clouds and sun with scattered thunderstorms. High near 85F. Winds light and variable. Chance of rain 60%.",
+          "fcttext_metric":"Scattered showers and thunderstorms. High near 30C. Winds light and variable. Chance of rain 60%.",
+          "pop":"60"
+        }
+        ,
+        {
+          "period":5,
+          "icon":"nt_partlycloudy",
+          "icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title":"Tuesday Night",
+          "fcttext":"Mostly cloudy skies early, then partly cloudy after midnight. Low 67F. Winds light and variable.",
+          "fcttext_metric":"Mostly cloudy skies early, then partly cloudy after midnight. Low 19C. Winds light and variable.",
+          "pop":"10"
+        }
+        ,
+        {
+          "period":6,
+          "icon":"clear",
+          "icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+          "title":"Wednesday",
+          "fcttext":"Generally sunny despite a few afternoon clouds. High 89F. Winds light and variable.",
+          "fcttext_metric":"Generally sunny despite a few afternoon clouds. High 31C. Winds light and variable.",
+          "pop":"10"
+        }
+        ,
+        {
+          "period":7,
+          "icon":"nt_partlycloudy",
+          "icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title":"Wednesday Night",
+          "fcttext":"A few clouds. Low 66F. Winds light and variable.",
+          "fcttext_metric":"A few clouds. Low 19C. Winds light and variable.",
+          "pop":"20"
+        }
+      ]
+    },
+    "simpleforecast": {
+      "forecastday": [
+        {"date":{
+          "epoch":"1466982000",
+          "pretty":"7:00 PM EDT on June 26, 2016",
+          "day":26,
+          "month":6,
+          "year":2016,
+          "yday":177,
+          "hour":19,
+          "min":"00",
+          "sec":0,
+          "isdst":"1",
+          "monthname":"June",
+          "monthname_short":"Jun",
+          "weekday_short":"Sun",
+          "weekday":"Sunday",
+          "ampm":"PM",
+          "tz_short":"EDT",
+          "tz_long":"America/New_York"
+        },
+        "period":1,
+        "high": {
+          "fahrenheit":"86",
+          "celsius":"30"
+        },
+        "low": {
+          "fahrenheit":"64",
+          "celsius":"18"
+        },
+        "conditions":"Partly Cloudy",
+        "icon":"partlycloudy",
+        "icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+        "skyicon":"",
+        "pop":0,
+        "qpf_allday": {
+          "in": 0.00,
+          "mm": 0
+        },
+        "qpf_day": {
+          "in": 0.00,
+          "mm": 0
+        },
+        "qpf_night": {
+          "in": 0.00,
+          "mm": 0
+        },
+        "snow_allday": {
+          "in": 0.0,
+          "cm": 0.0
+        },
+        "snow_day": {
+          "in": 0.0,
+          "cm": 0.0
+        },
+        "snow_night": {
+          "in": 0.0,
+          "cm": 0.0
+        },
+        "maxwind": {
+          "mph": 5,
+          "kph": 8,
+          "dir": "ENE",
+          "degrees": 63
+        },
+        "avewind": {
+          "mph": 4,
+          "kph": 6,
+          "dir": "ENE",
+          "degrees": 63
+        },
+        "avehumidity": 39,
+        "maxhumidity": 0,
+        "minhumidity": 0
+      }
+      ,
+      {"date":{
+        "epoch":"1467068400",
+        "pretty":"7:00 PM EDT on June 27, 2016",
+        "day":27,
+        "month":6,
+        "year":2016,
+        "yday":178,
+        "hour":19,
+        "min":"00",
+        "sec":0,
+        "isdst":"1",
+        "monthname":"June",
+        "monthname_short":"Jun",
+        "weekday_short":"Mon",
+        "weekday":"Monday",
+        "ampm":"PM",
+        "tz_short":"EDT",
+        "tz_long":"America/New_York"
+      },
+      "period":2,
+      "high": {
+        "fahrenheit":"90",
+        "celsius":"32"
+      },
+      "low": {
+        "fahrenheit":"69",
+        "celsius":"21"
+      },
+      "conditions":"Partly Cloudy",
+      "icon":"partlycloudy",
+      "icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "skyicon":"",
+      "pop":10,
+      "qpf_allday": {
+        "in": 0.06,
+        "mm": 2
+      },
+      "qpf_day": {
+        "in": 0.00,
+        "mm": 0
+      },
+      "qpf_night": {
+        "in": 0.06,
+        "mm": 2
+      },
+      "snow_allday": {
+        "in": 0.0,
+        "cm": 0.0
+      },
+      "snow_day": {
+        "in": 0.0,
+        "cm": 0.0
+      },
+      "snow_night": {
+        "in": 0.0,
+        "cm": 0.0
+      },
+      "maxwind": {
+        "mph": 10,
+        "kph": 16,
+        "dir": "S",
+        "degrees": 188
+      },
+      "avewind": {
+        "mph": 5,
+        "kph": 8,
+        "dir": "S",
+        "degrees": 188
+      },
+      "avehumidity": 63,
+      "maxhumidity": 0,
+      "minhumidity": 0
+    }
+    ,
+    {"date":{
+      "epoch":"1467154800",
+      "pretty":"7:00 PM EDT on June 28, 2016",
+      "day":28,
+      "month":6,
+      "year":2016,
+      "yday":179,
+      "hour":19,
+      "min":"00",
+      "sec":0,
+      "isdst":"1",
+      "monthname":"June",
+      "monthname_short":"Jun",
+      "weekday_short":"Tue",
+      "weekday":"Tuesday",
+      "ampm":"PM",
+      "tz_short":"EDT",
+      "tz_long":"America/New_York"
+    },
+    "period":3,
+    "high": {
+      "fahrenheit":"85",
+      "celsius":"29"
+    },
+    "low": {
+      "fahrenheit":"67",
+      "celsius":"19"
+    },
+    "conditions":"Chance of a Thunderstorm",
+    "icon":"chancetstorms",
+    "icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+    "skyicon":"",
+    "pop":60,
+    "qpf_allday": {
+      "in": 0.20,
+      "mm": 5
+    },
+    "qpf_day": {
+      "in": 0.20,
+      "mm": 5
+    },
+    "qpf_night": {
+      "in": 0.00,
+      "mm": 0
+    },
+    "snow_allday": {
+      "in": 0.0,
+      "cm": 0.0
+    },
+    "snow_day": {
+      "in": 0.0,
+      "cm": 0.0
+    },
+    "snow_night": {
+      "in": 0.0,
+      "cm": 0.0
+    },
+    "maxwind": {
+      "mph": 5,
+      "kph": 8,
+      "dir": "SSW",
+      "degrees": 212
+    },
+    "avewind": {
+      "mph": 4,
+      "kph": 6,
+      "dir": "SSW",
+      "degrees": 212
+    },
+    "avehumidity": 78,
+    "maxhumidity": 0,
+    "minhumidity": 0
+  }
+  ,
+  {"date":{
+    "epoch":"1467241200",
+    "pretty":"7:00 PM EDT on June 29, 2016",
+    "day":29,
+    "month":6,
+    "year":2016,
+    "yday":180,
+    "hour":19,
+    "min":"00",
+    "sec":0,
+    "isdst":"1",
+    "monthname":"June",
+    "monthname_short":"Jun",
+    "weekday_short":"Wed",
+    "weekday":"Wednesday",
+    "ampm":"PM",
+    "tz_short":"EDT",
+    "tz_long":"America/New_York"
+  },
+  "period":4,
+  "high": {
+    "fahrenheit":"89",
+    "celsius":"32"
+  },
+  "low": {
+    "fahrenheit":"66",
+    "celsius":"19"
+  },
+  "conditions":"Clear",
+  "icon":"clear",
+  "icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+  "skyicon":"",
+  "pop":10,
+  "qpf_allday": {
+    "in": 0.00,
+    "mm": 0
+  },
+  "qpf_day": {
+    "in": 0.00,
+    "mm": 0
+  },
+  "qpf_night": {
+    "in": 0.00,
+    "mm": 0
+  },
+  "snow_allday": {
+    "in": 0.0,
+    "cm": 0.0
+  },
+  "snow_day": {
+    "in": 0.0,
+    "cm": 0.0
+  },
+  "snow_night": {
+    "in": 0.0,
+    "cm": 0.0
+  },
+  "maxwind": {
+    "mph": 5,
+    "kph": 8,
+    "dir": "NNE",
+    "degrees": 25
+  },
+  "avewind": {
+    "mph": 4,
+    "kph": 6,
+    "dir": "NNE",
+    "degrees": 25
+  },
+  "avehumidity": 60,
+  "maxhumidity": 0,
+  "minhumidity": 0
+}
+]
+}
+}
+}
