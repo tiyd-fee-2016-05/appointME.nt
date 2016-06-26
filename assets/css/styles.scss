@@ -17,9 +17,13 @@ body{
 /********** SCSS VARIABLES  *****************/
 $green: #5ddab8;
 $grey: #d3d3d3;
+$black: rgba(0, 0, 0, 0.5);
 
 
 /**********  GLOBAL STYLING ****************/
+#app{
+  margin: 2em;
+}
 .input-form{
   font-size: 1.5em;
   width: 90%;
@@ -54,7 +58,8 @@ $grey: #d3d3d3;
   font-family: "Lato", sans-serif;
   height: 568px;
   width: 320px;
-  border: 2px solid black;
+  border: 2px solid $black;
+  border-radius: 10px;
   h2{
     padding: .5em 0;
     border-bottom: 2px solid $grey;
@@ -80,7 +85,7 @@ $grey: #d3d3d3;
     margin: 1em 0 1em 1em;
   }
   .left-side{
-    text-align: center;
+    text-align: left;
     float: left;
     height: 4em;
     width: 20%;
@@ -88,9 +93,13 @@ $grey: #d3d3d3;
     background-color: $green;
     font-weight: 700;
     color: white;
+    p{
+      text-align: center;
+      margin-top: .75em;
+    }
   }
   .right-side{
-    text-align: center;
+    text-align: left;
     float: right;
     height: 4em;
     width: 75%;
@@ -98,6 +107,14 @@ $grey: #d3d3d3;
     background-color: #ddd;
     font-weight: 700;
     color: black;
+      h4{
+        margin: .75em 1em .5em;
+      }
+      p{
+        margin: .5em 1em;
+        font-style: italic;
+        font-weight: 100;
+      }
   }
 }
 /*************************************/
@@ -111,7 +128,8 @@ $grey: #d3d3d3;
   font-family: "Lato", sans-serif;
   height: 568px;
   width: 320px;
-  border: 2px solid black;
+  border: 2px solid $black;
+  border-radius: 10px;
   #back-button{
     padding: 0.75em 0.5em;
     color: grey;
@@ -138,10 +156,15 @@ $grey: #d3d3d3;
     font-size: 1.5em;
     font-weight: 100;
     color: grey;
+    span{
+      margin: .5em 2em;
+      font-size: .5em;
+      font-weight: 700;
+    }
   }
   .save-app{
     font-family: 'Lato',sans-serif;
-    padding: .5em 0;
+    padding: .4em 0;
     position: absolute;
     bottom: 0;
     font-size: 2em;
@@ -150,6 +173,8 @@ $grey: #d3d3d3;
     font-weight: 400;
     width: 100%;
     border: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 }
 /*********APP-INFO PAGE STYLING ****/
@@ -158,7 +183,8 @@ $grey: #d3d3d3;
   font-family: "Lato", sans-serif;
   height: 568px;
   width: 320px;
-  border: 2px solid black;
+  border: 2px solid $black;
+  border-radius: 10px;
   #back-button{
     padding: 0.75em 0.5em;
     color: grey;
@@ -179,23 +205,36 @@ $grey: #d3d3d3;
     color: grey;
   }
   p{
-    padding: .5em;
+    padding: .5em 1em;
     font-size: 1.5em;
     font-weight: 100;
     color: grey;
+    span{
+      color: $green;
+      font-weight: 700;
+    }
+  }
+  .meeting-location{
+    font-style: italic;
+    i{
+      float: right;
+    }
   }
   .map_img{
+    margin: 1em;
+    padding: .5em;
     height: 10em;
-    width: 80%;
-    background: black;
+    background: $grey;
   }
   .weather{
-    background: grey;
+    margin: 1em;
+    padding: .5em;
+    background: $grey;
     font-size: 1.5em;
     font-weight: 400;
   }
   .save-app{
-    padding: .5em 0;
+    padding: .4em 0;
     position: absolute;
     bottom: 0;
     font-size: 2em;
@@ -204,6 +243,8 @@ $grey: #d3d3d3;
     font-weight: 400;
     width: 100%;
     border: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 }
 
@@ -215,7 +256,8 @@ $grey: #d3d3d3;
   font-family: "Lato", sans-serif;
   height: 568px;
   width: 320px;
-  border: 2px solid black;
+  border: 2px solid $black;
+  border-radius: 10px;
   #back-button{
     padding: 0.75em 0.5em;
     color: grey;
@@ -243,18 +285,22 @@ $grey: #d3d3d3;
     color: grey;
   }
   .delete-app{
-    padding: .5em 0;
+    padding: .4em 0;
     position: absolute;
     bottom: 0;
     font-size: 2em;
-    background-color: red;
+    background-color: #f54747;
     color: white;
     font-weight: 400;
     width: 50%;
     border: none;
+    border-bottom-left-radius: 8px;
+    span{
+      margin: 1em;
+    }
   }
   .save-app{
-    padding: .5em 0;
+    padding: .4em 0;
     position: absolute;
     bottom: 0;
     right:0;
@@ -264,5 +310,9 @@ $grey: #d3d3d3;
     font-weight: 400;
     width: 50%;
     border: none;
+    border-bottom-right-radius: 8px;
+    span{
+      margin: 1.5em;
+    }
   }
 }

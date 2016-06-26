@@ -1,19 +1,69 @@
-$(function strict(){
-"use strict";
+// $(function strict(){
+// "use strict";
+
+var savedAppointments = [];
+var log = [];
+
+//SAVE BUTTON - ADDS USER INPUT TO ARRAY OF OBJECTS
+$('.save-app').submit(function(e){
+  e.preventDefault();
+  //LOG THE INFORMATION
+  function saveApp(title, street, city, date, time) {
+    savedAppointments.push({
+      title: title,
+      street: street,
+      city: city,
+      date: date,
+      time: time
+    });
+  }
+});
+
+
+
+//DATA MODEL FOR EACH NEW APPOINTMENT ENTRY//
+var data = {
+  title: localStorage.getItem('title'),
+  street: localStorage.getItem('street'),
+  city: localStorage.getItem('city'),
+  date: localStorage.getItem('date'),
+  time: localStorage.getItem('time')
+};
 
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
-
 var homepage = Vue.extend({
-  template: '#APPhome'
+  template: '#APPhome',
+  data: function() {        //the information was not returning so now a function can be called to return the data table above
+    return {
+      appointments: data
+    };
+  }
 });
+
+//SET UP VUE COMPONENTS FOR NEW INFORMATION
 var newapp = Vue.extend({
-  template: '#APPnew'
+  template: '#APPnew',
+  data: function() {
+    return {
+      appointments: data
+    };
+  }
 });
 var appinfo = Vue.extend({
-  template: '#APPinfo'
+  template: '#APPinfo',
+  data: function(){
+    return{
+      appointments: data
+    };
+  }
 });
 var editapp = Vue.extend({
-  template: '#APPedit'
+  template: '#APPedit',
+  data: function(){
+    return{
+      appointments: data
+    };
+  }
 });
 
 
@@ -39,5 +89,4 @@ router.map({
 
 router.start(App,'#app');
 
-
-});
+// });

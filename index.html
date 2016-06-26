@@ -1,148 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700' rel='stylesheet' type='text/css'>
-    <title>AppointMe</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700' rel='stylesheet' type='text/css'>
+  <title>AppointMe</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-  <body>
-    <div id="app">
-      <router-view></router-view>
+<body>
+  <div id="app">
+    <router-view></router-view>
+  </div>
+
+
+  <template id="APPhome">
+    <div id="homepage">
+
+      <h2>Appointments</h2>
+
+
+      <a v-link="'/new'" id="plus"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+      <form class="search-form" action="index.html" method="post">
+        <input type="text" class="input-form">
+        <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+      </form>
+      <ul id="homepage-ul">
+        <li v-link="'/view'" class="homepage-li">
+          <div class="left-side"><p>{{appointments.time}}</p></div>
+          <div class="right-side">
+            <h4>{{appointments.title}}</h4>
+            <p>@{{appointments.street}}, {{appointments.city}}</p>
+          </div>
+
+        </li>
+
+        <li class="homepage-li">
+          <div class="left-side"><p>{{appointments.time}}</p></div>
+          <div class="right-side">
+            <h4>{{appointments.title}}</h4>
+            <p>@{{appointments.street}}, {{appointments.city}}</p>
+          </div>
+        </li>
+      </ul>
     </div>
+  </template>
 
+  <template id="APPnew">
+    <div id="new-app">
 
-    <template id="APPhome">
-      <div id="homepage">
+      <a v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <h2>New Appointment</h2>
+      <h4>Title<span>{{title}}</span></h4>
 
-        <h2>Appointments</h2>
+      <form class="new-app-form-title">
+        <input type="text" class="input-form" id="input-title" v-model="title">
+      </form>
 
+      <h4>Street</h4>
+      <form class="new-app-form" action="index.html" method="post">
+        <input type="text" class="input-form" id="input-street">
+        <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+      </form>
 
-        <button v-link="'/new'" id="plus"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></button>
-        <form class="search-form" action="index.html" method="post">
-          <input type="text" class="input-form">
-          <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-        </form>
-        <ul id="homepage-ul">
-          <li v-link="'/view'" class="homepage-li">
-            <div class="left-side">5pm</div>
-            <div class="right-side">
-                <h4>meet me</h4>
-                <p>@durham</p>
-            </div>
+      <h4>City, State</h4>
+      <input type="text" class="input-form" id="input-city">
 
-         </li>
+      <h4>Date</h4>
+      <form class="new-app-form" action="index.html" method="post">
+        <input type="text" class="input-form" id="input-date">
+        <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+      </form>
 
-          <li class="homepage-li">
-            <div class="left-side">5pm</div>
-            <div class="right-side">
-                <h4>meet me</h4>
-                <p>@raleigh</p>
-            </div>
-         </li>
-       </ul>
+      <h4>Time</h4>
+      <form class="new-app-form" action="index.html" method="post">
+        <input type="text" class="input-form" id="input-time">
+        <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+      </form>
+      <button class="save-app">Save Appointment</button>
+    </div>
+  </template>
+
+  <template id="APPinfo">
+    <div id="app-info">
+
+      <a v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <h2>{{appointments.title}}</h2>
+      <p class="meeting-time">
+        {{appointments.date}} at <span>{{appointments.time}}</span>
+      </p>
+      <p class="meeting-location">
+        {{appointments.street}}
+        <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+      </p>
+      <div class="map_img">
+        <img src="" alt="" />
       </div>
-    </template>
-
-    <template id="APPnew">
-      <div id="new-app">
-
-        <button v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-          <h2>New Appointment</h2>
-          <h4>Title</h4>
-          <form class="new-app-form-title">
-            <input type="text" class="input-form" id="input-title">
-          </form>
-
-          <h4>Street</h4>
-            <form class="new-app-form" action="index.html" method="post">
-              <input type="text" class="input-form" id="input-street">
-              <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-            </form>
-
-          <h4>City,State</h4>
-          <input type="text" class="input-form" id="input-city">
-
-          <h4>Date</h4>
-          <form class="new-app-form" action="index.html" method="post">
-            <input type="text" class="input-form" id="input-date">
-            <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
-          </form>
-
-          <h4>Time</h4>
-          <form class="new-app-form" action="index.html" method="post">
-            <input type="text" class="input-form" id="input-time">
-            <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
-          </form>
-        <button class="save-app">Save Appointment</button>
+      <div class="weather">
+        {weather icon}
+        {temp}
       </div>
-    </template>
+      <button v-link="'/edit'" class="save-app">Edit Appointment</button>
+    </div>
+  </template>
 
-    <template id="APPinfo">
-      <div id="app-info">
+  <template id="APPedit">
+    <div id="edit-app">
 
-        <button v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-        <h2>{meeting_w/_ash}</h2>
-        <p class="meeting-time">
-          {Today_at_5pm}
-        </p>
-        <p class="meeting-location">
-          {TIY Durham}
-          <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-        </p>
-        <div class="map_img">
-          <img src="" alt="" />
-        </div>
-        <div class="weather">
-          {weather icon}
-          {temp}
-        </div>
-        <button v-link="'/edit'" class="save-app">Edit Appointment</button>
-      </div>
-    </template>
+      <a v-link="'/view'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <h2>Edit Appointment</h2>
+      <h4>Title</h4>
+      <input type="text" class="input-form" id="input-title" placeholder="{{appointments.title}}">
 
-    <template id="APPedit">
-      <div id="edit-app">
+      <h4>Street</h4>
+      <form class="new-app-form" action="index.html" method="post">
+        <input type="text" class="input-form" id="input-street" placeholder="{{appointments.street}}">
+        <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+      </form>
 
-        <button v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-          <h2>Edit Appointment</h2>
-          <h4>Title</h4>
-          <input type="text" class="input-form" id="input-title">
+      <h4>City, State</h4>
+      <input type="text" class="input-form" id="input-city" placeholder="{{appointments.city}}">
 
-          <h4>Street</h4>
-            <form class="new-app-form" action="index.html" method="post">
-              <input type="text" class="input-form" id="input-street">
-              <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
-            </form>
+      <h4>Date</h4>
+      <form class="new-app-form" action="index.html" method="post">
+        <input type="text" class="input-form" id="input-date" placeholder="{{appointments.date}}">
+        <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+      </form>
 
-          <h4>City,State</h4>
-          <input type="text" class="input-form" id="input-city">
+      <h4>Time</h4>
+      <form class="new-app-form" action="index.html" method="post">
+        <input type="text" class="input-form" id="input-time" placeholder="{{appointments.time}}">
+        <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+      </form>
+      <a class="delete-app"><span>Delete</span></a>
+      <a class="save-app"><span>Save</span></a>
+    </div>
+  </template>
 
-          <h4>Date</h4>
-          <form class="new-app-form" action="index.html" method="post">
-            <input type="text" class="input-form" id="input-date">
-            <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
-          </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src = "https://npmcdn.com/vue@1.0.25/dist/vue.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.10/vue-router.min.js"></script>
 
-          <h4>Time</h4>
-          <form class="new-app-form" action="index.html" method="post">
-            <input type="text" class="input-form" id="input-time">
-            <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
-          </form>
-        <button class="delete-app">Delete</button>
-        <button class="save-app">Save</button>
-      </div>
-    </template>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src = "https://npmcdn.com/vue@1.0.25/dist/vue.min.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.10/vue-router.min.js"></script>
-
-    </script>
-    <script src="assets/js/appoint.js"></script>
-  </body>
+</script>
+<script src="assets/js/appoint.js"></script>
+<script src="test/saveappFunction.js"></script>
+</body>
 </html>
