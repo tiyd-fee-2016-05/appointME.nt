@@ -50,6 +50,21 @@ Input IDs:
 
 >'#input-time'
 
+
+Need to set up data model for entering in New Appointments:
+      var data = {
+        title: "First appointment",
+        street: "1 Street",
+        city: "Durham",
+        date: "Today",
+        time: "Now"
+      };
+
+* This data will need to be stored every time the **SAVE APPOINTMENT** button is clicked.
+* We will need to access this information every time the **EDIT APPOINTMENT** button is clicked on the '#APPinfo' page. 
+
+
+
 ## Edit Appointment Page
 
 ## View Appointment Page
