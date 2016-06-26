@@ -2,13 +2,13 @@ $(function strict(){
 "use strict";
 
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
-var data = [{
-  title: "first appointment",
-  street: "street appointment",
-  city: "city appointment",
-  date: " date appointment",
-  time: "time appointment"
-}];
+var data = {
+  title: "title",
+  street: "street",
+  city: "city",
+  date: "date",
+  time: "time"
+};
 
 
 var homepage = Vue.extend({
