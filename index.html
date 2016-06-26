@@ -52,9 +52,10 @@
 
       <a v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
       <h2>New Appointment</h2>
-      <h4>Title</h4>
+      <h4>Title<span>{{title}}</span></h4>
+
       <form class="new-app-form-title">
-        <input type="text" class="input-form" id="input-title">
+        <input type="text" class="input-form" id="input-title" v-model="title">
       </form>
 
       <h4>Street</h4>
@@ -107,7 +108,7 @@
   <template id="APPedit">
     <div id="edit-app">
 
-      <a v-link="'/'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <a v-link="'/view'" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
       <h2>Edit Appointment</h2>
       <h4>Title</h4>
       <input type="text" class="input-form" id="input-title" placeholder="{{appointments.title}}">

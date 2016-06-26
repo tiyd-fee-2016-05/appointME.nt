@@ -6,7 +6,7 @@ var log = [];
 $('.save-app').click(function(e){
   e.preventDefault();
 
-  var data = {
+  var newInput = {
     title: $('#input-title').val(),
     street: $('#input-street').val(),
     city: $('#input-city').val(),
@@ -14,14 +14,14 @@ $('.save-app').click(function(e){
     time: $('#input-time').val()
   };
 
-  localStorage.setItem('title', data.title);
-  localStorage.setItem('street', data.street);
-  localStorage.setItem('city', data.city);
-  localStorage.setItem('date', data.date);
-  localStorage.setItem('time', data.time);
+  localStorage.setItem('title', newInput.title);
+  localStorage.setItem('street', newInput.street);
+  localStorage.setItem('city', newInput.city);
+  localStorage.setItem('date', newInput.date);
+  localStorage.setItem('time', newInput.time);
 
 
-  localStorage.setItem('log', JSON.stringify(data));
+  localStorage.setItem('log', JSON.stringify(newInput));
   console.log(JSON.parse(localStorage.getItem('log')));
 
 
@@ -34,7 +34,7 @@ $('.save-app').click(function(e){
       time: time
     });
   }
-  logging(data.title, data.street, data.city, data.date, data.time);
+  logging(newInput.title, newInput.street, newInput.city, newInput.date, newInput.time);
   console.log(log);
 
   $('.input-form').val("");

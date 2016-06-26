@@ -2,6 +2,7 @@
 // "use strict";
 
 var savedAppointments = [];
+var log = [];
 
 //SAVE BUTTON - ADDS USER INPUT TO ARRAY OF OBJECTS
 $('.save-app').submit(function(e){

@@ -21,6 +21,9 @@ $black: rgba(0, 0, 0, 0.5);
 
 
 /**********  GLOBAL STYLING ****************/
+#app{
+  margin: 2em;
+}
 .input-form{
   font-size: 1.5em;
   width: 90%;
@@ -153,6 +156,11 @@ $black: rgba(0, 0, 0, 0.5);
     font-size: 1.5em;
     font-weight: 100;
     color: grey;
+    span{
+      margin: .5em 2em;
+      font-size: .5em;
+      font-weight: 700;
+    }
   }
   .save-app{
     font-family: 'Lato',sans-serif;
@@ -165,6 +173,8 @@ $black: rgba(0, 0, 0, 0.5);
     font-weight: 400;
     width: 100%;
     border: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 }
 /*********APP-INFO PAGE STYLING ****/
@@ -233,6 +243,8 @@ $black: rgba(0, 0, 0, 0.5);
     font-weight: 400;
     width: 100%;
     border: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 }
 
@@ -282,6 +294,7 @@ $black: rgba(0, 0, 0, 0.5);
     font-weight: 400;
     width: 50%;
     border: none;
+    border-bottom-left-radius: 8px;
     span{
       margin: 1em;
     }
@@ -297,6 +310,7 @@ $black: rgba(0, 0, 0, 0.5);
     font-weight: 400;
     width: 50%;
     border: none;
+    border-bottom-right-radius: 8px;
     span{
       margin: 1.5em;
     }
