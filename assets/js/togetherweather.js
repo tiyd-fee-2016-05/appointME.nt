@@ -15,6 +15,6 @@ $.ajax({
     console.log(img);
     // $(".weather").html(icon + " " + temp + "&#8457;").append('<img src="' + img + '"/>');
     $(".weather").append('<img src="' + img + '"/>' + '<span>' + icon + ", " + temp + "&#8457;" + '</span>');
-    $(".left-side").html('<img src="' + img + '"/>');
+    $(".left-side").append('<img src="' + img + '"/>');
   }
 });
