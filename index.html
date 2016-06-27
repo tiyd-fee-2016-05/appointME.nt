@@ -58,18 +58,18 @@
         <input type="text" class="input-form" id="input-title" v-model="title">
       </form>
 
-      <h4>Street</h4>
+      <h4>Street <span>{{street}}</span> </h4>
       <form class="new-app-form" action="index.html" method="post">
-        <input type="text" class="input-form" id="input-street">
+        <input type="text" class="input-form" id="input-street" v-model="street">
         <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
       </form>
 
       <h4>City, State</h4>
       <input type="text" class="input-form" id="input-city">
 
-      <h4>Date</h4>
+      <h4>Date <span>{{city}}</span> </h4>
       <form class="new-app-form" action="index.html" method="post">
-        <input type="text" class="input-form" id="input-date">
+        <input type="text" class="input-form" id="input-date" v-model="city">
         <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
       </form>
 
@@ -98,10 +98,8 @@
         <img src="" alt="" />
       </div>
       <div class="weather">
-        {weather icon}
-        {temp}
       </div>
-      <button v-link="'/edit'" class="save-app">Edit Appointment</button>
+      <button v-link="'/edit'" class="edit-save-app">Edit Appointment</button>
     </div>
   </template>
 
@@ -133,8 +131,8 @@
         <input type="text" class="input-form" id="input-time" placeholder="{{appointments.time}}">
         <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
       </form>
-      <a class="delete-app"><span>Delete</span></a>
-      <a class="save-app"><span>Save</span></a>
+      <button class="delete-app"><span>Delete</span></button>
+      <button class="save-edit-app"><span>Save</span></button>
     </div>
   </template>
 
@@ -145,5 +143,7 @@
 </script>
 <script src="assets/js/appoint.js"></script>
 <script src="test/saveappFunction.js"></script>
+<script src="assets/js/weather.js"></script>
+
 </body>
 </html>
