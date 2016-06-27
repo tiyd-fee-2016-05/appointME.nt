@@ -1,28 +1,9 @@
 // $(function strict(){
 // "use strict";
 
-var savedAppointments = [];
-var log = [];
-
-//SAVE BUTTON - ADDS USER INPUT TO ARRAY OF OBJECTS
-$('.save-app').submit(function(e){
-  e.preventDefault();
-  //LOG THE INFORMATION
-  function saveApp(title, street, city, date, time) {
-    savedAppointments.push({
-      title: title,
-      street: street,
-      city: city,
-      date: date,
-      time: time
-    });
-  }
-});
-
-
 
 //DATA MODEL FOR EACH NEW APPOINTMENT ENTRY//
-var data = {
+var newInput = {
   title: localStorage.getItem('title'),
   street: localStorage.getItem('street'),
   city: localStorage.getItem('city'),
@@ -43,7 +24,7 @@ var homepage = Vue.extend({
 //SET UP VUE COMPONENTS FOR NEW INFORMATION
 var newapp = Vue.extend({
   template: '#APPnew',
-  data: function() {
+  newInput: function() {
     return {
       appointments: data
     };

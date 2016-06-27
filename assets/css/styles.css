@@ -134,9 +134,10 @@ body {
     font-weight: 100;
     color: grey; }
     #new-app h4 span {
-      margin: .5em 2em;
+      padding: 1em 1em 0 0;
       font-size: .5em;
-      font-weight: 700; }
+      font-weight: 700;
+      float: right; }
   #new-app .save-app {
     font-family: 'Lato',sans-serif;
     padding: .4em 0;
