@@ -134,7 +134,8 @@ body {
     font-weight: 100;
     color: grey; }
     #new-app h4 span {
-      margin: .5em 2em;
+      float: right;
+      margin: 1em;
       font-size: .5em;
       font-weight: 700; }
   #new-app .save-app {
@@ -199,7 +200,7 @@ body {
     background: #d3d3d3;
     font-size: 1.5em;
     font-weight: 400; }
-  #app-info .save-app {
+  #app-info .edit-save-app {
     padding: .4em 0;
     position: absolute;
     bottom: 0;
@@ -255,7 +256,7 @@ body {
     border-bottom-left-radius: 8px; }
     #edit-app .delete-app span {
       margin: 1em; }
-  #edit-app .save-app {
+  #edit-app .save-edit-app {
     padding: .4em 0;
     position: absolute;
     bottom: 0;
@@ -267,7 +268,7 @@ body {
     width: 50%;
     border: none;
     border-bottom-right-radius: 8px; }
-    #edit-app .save-app span {
+    #edit-app .save-edit-app span {
       margin: 1.5em; }
 
 /*# sourceMappingURL=styles.css.map */

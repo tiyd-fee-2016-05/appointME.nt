@@ -1,3 +1,7 @@
+
+
+
+
 var LScity = localStorage.getItem("city");
 
 console.log(LScity);
