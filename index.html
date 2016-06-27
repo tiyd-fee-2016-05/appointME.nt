@@ -64,12 +64,15 @@
         <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
       </form>
 
-      <h4>City, State</h4>
-      <input type="text" class="input-form" id="input-city">
-
-      <h4>Date <span>{{city}}</span> </h4>
+      <h4>City, State <span>{{city}}</span> </h4>
       <form class="new-app-form" action="index.html" method="post">
-        <input type="text" class="input-form" id="input-date" v-model="city">
+        <input type="text" class="input-form" id="input-city" v-model="city">
+      </form>
+
+
+      <h4>Date <span>{{date}}</span> </h4>
+      <form class="new-app-form" action="index.html" method="post">
+        <input type="text" class="input-form" id="input-date" v-model="date">
         <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
       </form>
 
