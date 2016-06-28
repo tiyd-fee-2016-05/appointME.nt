@@ -1,4 +1,4 @@
-<template id="APPhome">
+
   <div id="homepage">
 
     <h2>Appointments</h2>
@@ -10,13 +10,14 @@
       <i class="fa fa-search fa-lg" aria-hidden="true"></i>
     </form>
     <ul id="homepage-ul">
-      <li v-link="'/view'" class="homepage-li">
+      <li class="homepage-li">
+        <a href="#/info">
         <div class="left-side"><p>{{appointments.time}}</p></div>
         <div class="right-side">
           <h4>{{appointments.title}}</h4>
           <p>@{{appointments.street}}, {{appointments.city}}</p>
         </div>
-
+      </a>
       </li>
 
       <li class="homepage-li">
@@ -28,5 +29,3 @@
       </li>
     </ul>
   </div>
-
-</template>
