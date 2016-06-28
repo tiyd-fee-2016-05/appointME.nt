@@ -30,10 +30,53 @@ var data = {
   time: localStorage.getItem('time')
 };
 
+////////////////// Angular   ///////////////////////
+var app = angular.module("app", ['ngRoute']);
+
+app.config(function($routeProvider) {
+  $routeProvider
+    .when('/Apphome', {
+      templateUrl: 'homepage.html',
+      controller: 'AppController'
+    })
+    .when('/Appnew', {
+      templateUrl: 'newapp.html',
+      controller: 'AppController'
+    })
+    .when('/Appinfo', {
+      templateUrl: 'infoapp.html',
+      controller: 'AppController'
+    })
+    .when('/Appedit', {
+      templateUrl: 'edit.html',
+      controller: 'AppController'
+    })
+    .when({
+      redirectTo: '/Apphome'
+    });
+});
+
+app.controller('AppController', function($scope){
+  $scope.data = [{
+    title: localStorage.getItem('title'),
+    street: localStorage.getItem('street'),
+    city: localStorage.getItem('city'),
+    date: localStorage.getItem('date'),
+    time: localStorage.getItem('time')
+  }];
+
+  $scope.message = ""
+
+});
+
+
+
+
+
 //SETTING UP VUE COMPONENTS TO PROPERLY REFERENCE CORRECT TEMPLATE
 var homepage = Vue.extend({
   template: '#APPhome',
-  data: function() {        //the information was not returning so now a function can be called to return the data table above
+  data: function(){        //the information was not returning so now a function can be called to return the data table above
     return {
       appointments: data
     };
