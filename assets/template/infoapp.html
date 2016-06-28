@@ -1,7 +1,7 @@
 
   <div id="app-info">
 
-    <a href="#/info" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    <a href="#/home" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
     <h2>{{appointments.title}}</h2>
     <p class="meeting-time">
       {{appointments.date}} at <span>{{appointments.time}}</span>
@@ -15,5 +15,6 @@
     </div>
     <div class="weather">
     </div>
-    <button v-link="'/edit'" class="edit-save-app">Edit Appointment</button>
+    <a href="#/edit">
+    <button class="edit-save-app">Edit Appointment</button></a>
   </div>
