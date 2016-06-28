@@ -1,0 +1,35 @@
+  <div id="new-app">
+
+    <a href="#/" id="back-button"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    <h2>New Appointment</h2>
+    <h4>Title<span>{{title}}</span></h4>
+
+    <form class="new-app-form-title">
+      <input type="text" class="input-form" id="input-title" ng-model="title">
+    </form>
+
+    <h4>Street <span>{{street}}</span> </h4>
+    <form class="new-app-form" action="index.html" method="post">
+      <input type="text" class="input-form" id="input-street" ng-model="street">
+      <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+    </form>
+
+    <h4>City, State <span>{{city}}</span> </h4>
+    <form class="new-app-form" action="index.html" method="post">
+      <input type="text" class="input-form" id="input-city" ng-model="city">
+    </form>
+
+
+    <h4>Date <span>{{date}}</span> </h4>
+    <form class="new-app-form" action="index.html" method="post">
+      <input type="text" class="input-form" id="input-date" ng-model="date">
+      <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+    </form>
+
+    <h4>Time</h4>
+    <form class="new-app-form" action="index.html" method="post">
+      <input type="text" class="input-form" id="input-time">
+      <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+    </form>
+    <button class="save-app">Save Appointment</button>
+  </div>

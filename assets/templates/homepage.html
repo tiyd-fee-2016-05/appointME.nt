@@ -1,0 +1,21 @@
+  <div id="homepage">
+
+    <h2>Appointments</h2>
+
+
+    <a href="#/new" id="plus"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <form class="search-form" action="index.html" method="post">
+      <input type="text" class="input-form">
+      <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+    </form>
+    <ul id="homepage-ul">
+      <li class="homepage-li" ng-repeat="appointments in data"><a href="#/view">
+        <div class="left-side"><p>{{appointments.time}}</p></div>
+        <div class="right-side">
+          <h4>{{appointments.title}}</h4>
+          <p>@{{appointments.street}}, {{appointments.city}}</p>
+        </div>
+        </a>
+      </li>
+    </ul>
+  </div>
